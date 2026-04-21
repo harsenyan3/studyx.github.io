@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Report</title>
+  <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top">Tech Report</a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="data.html">Data</a>
+        <a href="recommendations.html">Recommendations</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Project Redesign Group 6</p>
+        <h1>Rethinking StudyX.ai</h1>
+        <p>This is our redesign proposal for this AI-powered study platform.</p>
+        <p class="authors"><strong>Authors:</strong> Hayk Arsenyan, Lily Carras, Kenneth Doan, Hannah Rajan, Eduardo Valverde</p>
+      </div>
+
+      <figure class="banner-art">
+        <img src="src/assets/images/studyx-landing.png" alt="StudyX redesigned homepage with green sidebar, welcome message, mascot illustration, and sign up button.">
+        <figcaption class="caption">Banner image: high-fidelity StudyX.ai homepage prototype.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <main>
+    <section class="section card summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Summary</h2>
+      <p>This report presents a usability study of StudyX.ai, an AI-powered study tool that helps students generate quizzes, flashcards, notes, summaries, and tutoring support from uploaded academic materials. The product is useful in concept because it reduces the time students spend turning course content into review materials. However, our usability testing found that the current interface makes several common tasks harder than they need to be, especially for first-time users.</p>
+      <p>Across six moderated usability sessions, participants had the most difficulty with onboarding, file upload feedback, sidebar navigation, quiz feedback, and content organization. Only one participant completed the onboarding task without assistance. All participants expressed uncertainty during file upload because the system did not show progress or confirmation. Participants also struggled with the sidebar because it presented many tools at the same visual level, making the correct next step difficult to identify. The quiz results page created additional confusion because feedback was minimal and did not explain why an answer was wrong.</p>
+      <p>Our prototype responds to these findings with four main design changes: a clearer landing page, a simplified sidebar, visible upload progress, and expanded quiz feedback. These changes are intended to improve learnability, reduce user error, and make the platform feel more trustworthy during important study tasks. The key takeaway is that StudyX.ai does not need more features to become more usable. It needs clearer guidance, stronger visual hierarchy, and better feedback at moments when users are deciding what to do next. We recommend that the product and engineering teams prioritize these changes because they directly address the task failures observed in testing.</p>
+    </section>
+
+    <section class="stats" aria-label="Study overview statistics">
+      <div class="stat"><strong>6</strong><span>Participants</span></div>
+      <div class="stat"><strong>7</strong><span>Tasks Tested</span></div>
+      <div class="stat"><strong>5</strong><span>Key Issues</span></div>
+      <div class="stat"><strong>4.8</strong><span>Avg. Quiz Feedback Rating</span></div>
+    </section>
+
+    <section class="section" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction</h2>
+        <p>StudyX.ai is an AI-powered web application that aims to provide users with a unique, centralized, and effective study assistant.
+          Some of the functionalities of the app include: allowing users to upload academic content and generate learning materials, such as
+          summaries or interactive quizzes. To give a brief summary, the platform is based on main AI features such as: quiz generation, flashcard creation,
+          summarization, course notes. Due to the character of the platform, the target audience is clear, it is students, in general.
+          This encompasses students in high school, college, and graduate programs who want to leverage AI in their academic activities to boost their study and review efficiency and performance.</p>
+
+          <p>The reason why our team chose to redesign StudyX.ai was mainly because we could see many challenges that represent a common obstacle in modern educational technology, which is that a product that aims to offer
+          a vast amount of powerful AI features, and the ambition of the solution makes it resort to what is often a rather complicated and flawed interface that does not allow for all those ambitious features to actually
+          be understood and used in the way intended.
+          Some early findings showed that the home page did not present the user with an optimal landing point to start navigating the app.
+          Moreover there were some severe visual and design flaws we noticed quite fastly, like the sidebar, which was large, cluttered with
+          much text, information and many similar and non-descriptively named tools without a clear grouping or intuitive user flow.</p>
+
+        <p>We focused on a target demographic for this study that included both academically active users with moderate experience using digital study tools and AI products. We recruited participants connected to Georgia Tech, including undergraduate students, a graduate student, a dual enrollment student, and a faculty or staff participant. This range was useful because StudyX.ai markets itself to a broad academic audience.</p>
+        <p>Before testing, our main hypothesis was that first-time users would struggle to understand where to begin. We also expected the sidebar to slow users down because too many tools were presented at the same level. Finally, we predicted that users would want more detailed feedback from AI-generated quizzes, since educational feedback is most useful when it explains mistakes rather than simply marking answers as correct or incorrect.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>StudyX.ai Tech Report</p>
+  </footer>
+</body>
+</html>
