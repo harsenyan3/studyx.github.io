@@ -35,27 +35,18 @@
         <p>The existing product places users directly into an upload prompt. Our design adds a short welcome message, a plain explanation of what StudyX.ai does, and visible starting actions. This improves learnability by helping first-time users understand the system before they commit to an upload.</p>
       </div>
 
-      <figure class="comparison" role="img" aria-label="Before and after comparison showing a vague upload prompt replaced by a clear welcome area.">
+      <figure class="comparison">
         <div class="before-after">
           <div class="screen before">
             <h4>Before</h4>
-            <div class="mock">
-              <div class="mock-line long"></div>
-              <div class="mock-line"></div>
-              <div class="mock-line short"></div>
-              <p>Upload file</p>
-            </div>
+            <img src="src/assets/images/recs-landing-before.png" alt="Original StudyX landing page with a large upload area and many tool options shown at once.">
           </div>
           <div class="screen after">
             <h4>After</h4>
-            <div class="mock">
-              <strong>Welcome to StudyX.ai</strong>
-              <p>Create quizzes, summaries, and study guides from your course files.</p>
-              <span class="mock-button">Start Studying</span>
-            </div>
+            <img src="src/assets/images/recs-landing-after.png" alt="Redesigned StudyX landing page with a welcome message, clearer sign-up action, and simplified navigation.">
           </div>
         </div>
-        <figcaption class="caption">Figure 5: The redesigned landing page gives users a clearer first step.</figcaption>
+        <figcaption class="caption">Figure 5: The redesigned landing page gives first-time users a clearer entry point and a stronger explanation of StudyX.ai's value.</figcaption>
       </figure>
 
       <div class="recommendation">
@@ -63,33 +54,18 @@
         <p>The existing sidebar presents too many tools at the same level. Our design groups navigation into Home, Library, AI Tools, and Preferences. This reduces visual scanning, lowers wrong-click rates, and supports efficiency. The trade-off is that some secondary tools become less visible, but the most common study workflows become easier to find.</p>
       </div>
 
-      <figure class="comparison" role="img" aria-label="Before and after comparison showing a long sidebar replaced by grouped navigation.">
+      <figure class="comparison">
         <div class="before-after">
           <div class="screen before">
             <h4>Before</h4>
-            <div class="mock">
-              <div class="mock-line long"></div>
-              <div class="mock-line long"></div>
-              <div class="mock-line long"></div>
-              <div class="mock-line long"></div>
-              <div class="mock-line long"></div>
-              <div class="mock-line long"></div>
-              <div class="mock-line long"></div>
-            </div>
+            <img class="portrait-shot" src="src/assets/images/recs-sidebar-before.png" alt="Original sidebar with a long list of AI tools and minimal grouping.">
           </div>
           <div class="screen after">
             <h4>After</h4>
-            <div class="mock">
-              <strong>Home</strong>
-              <div class="mock-line short"></div>
-              <strong>Library</strong>
-              <div class="mock-line short"></div>
-              <strong>AI Tools</strong>
-              <div class="mock-line"></div>
-            </div>
+            <img class="portrait-shot" src="src/assets/images/recs-sidebar-after.png" alt="Redesigned sidebar with clearer groups for Home, Library, AI Tools, and Preferences.">
           </div>
         </div>
-        <figcaption class="caption">Figure 6: Grouped navigation reduces the decision load in the sidebar.</figcaption>
+        <figcaption class="caption">Figure 6: The redesigned sidebar reduces the number of competing choices and organizes tools by user intent.</figcaption>
       </figure>
 
       <div class="recommendation">
@@ -97,65 +73,75 @@
         <p>The existing upload flow does not tell users whether a file is uploading, processing, or complete. Our design adds a progress bar, status text, and final confirmation. This improves system feedback and reduces user error, especially the repeated uploads observed during testing.</p>
       </div>
 
-      <figure class="comparison" role="img" aria-label="Before and after comparison showing no upload feedback replaced by a progress bar and processing status.">
+      <figure class="comparison">
         <div class="before-after">
           <div class="screen before">
             <h4>Before</h4>
-            <div class="mock">
-              <p>File selected</p>
-              <div class="mock-line short"></div>
-              <p>No confirmation or progress.</p>
-            </div>
+            <img src="src/assets/images/recs-upload-before.png" alt="Original upload flow showing a file being read without a clear progress indicator.">
           </div>
           <div class="screen after">
             <h4>After</h4>
-            <div class="mock">
-              <p><strong>Processing lecture_notes.pdf</strong></p>
-              <div class="bar-track"><div class="bar" style="width: 72%;"></div></div>
-              <p>72 percent complete. About 8 seconds remaining.</p>
-            </div>
+            <img src="src/assets/images/recs-upload-after.png" alt="Redesigned upload flow with a large progress bar and clear uploading file status.">
           </div>
         </div>
-        <figcaption class="caption">Figure 7: Upload feedback keeps users informed while the system works.</figcaption>
+        <figcaption class="caption">Figure 7: Upload feedback keeps users informed while the system processes files, reducing uncertainty and repeated uploads.</figcaption>
       </figure>
 
       <div class="recommendation">
-        <h3>4. Expand quiz results with explanations</h3>
-        <p>The existing quiz feedback only tells users whether an answer is correct or incorrect. Our design adds brief explanations, references to the uploaded material, and a suggested AI Tutor follow-up. This improves educational value and accessibility because users can understand mistakes without searching through the original document manually.</p>
+        <h3>4. Redesign AI Tutor as an ongoing tutoring chat</h3>
+        <p>The existing experience treats help as a single request based on one upload or answer state. Our redesign makes AI Tutor a persistent chat workspace where students can upload files, ask an initial question, and continue with follow-up questions in the same conversation. This better supports real tutoring behavior: students can clarify confusing concepts, ask for examples, request simpler explanations, and connect answers back to their course materials without restarting the workflow. The trade-off is that the chat interface requires stronger conversation history and file-context handling, but it directly improves learnability, feedback quality, and user control.</p>
       </div>
 
-      <figure class="comparison" role="img" aria-label="Before and after comparison showing simple correct incorrect feedback replaced by explanatory quiz feedback.">
+      <figure class="comparison">
         <div class="before-after">
           <div class="screen before">
             <h4>Before</h4>
-            <div class="mock">
-              <p>Question 1: Incorrect</p>
-              <p>Question 2: Correct</p>
-              <p>Question 3: Incorrect</p>
-            </div>
+            <img src="src/assets/images/recs-tutor-before.png" alt="Original personal AI tutor page centered on a single upload and answer request.">
           </div>
           <div class="screen after">
             <h4>After</h4>
-            <div class="mock">
-              <p><strong>Question 1: Incorrect</strong></p>
-              <p>Explanation: The correct concept is mitosis, which creates two identical daughter cells. See page 43 of the uploaded notes.</p>
-              <span class="mock-button">Ask AI Tutor</span>
-            </div>
+            <img src="src/assets/images/recs-tutor-after.png" alt="Redesigned AI Tutor page with a chat conversation, file attachment, message input, and send button.">
           </div>
         </div>
-        <figcaption class="caption">Figure 8: Explanatory quiz feedback supports learning instead of only scoring.</figcaption>
+        <figcaption class="caption">Figure 8: The AI Tutor redesign changes tutoring from a one-time answer flow into a continuing conversation with file-aware follow-up support.</figcaption>
       </figure>
 
       <div class="recommendation">
-        <h3>5. Add course folders in the Library</h3>
-        <p>The existing product does not make organization visible enough. Our design adds course folders and a New Course button in the Library. This supports returning users who need to manage many study materials over time. The trade-off is one extra setup step, but it makes long-term use more predictable and organized.</p>
+        <h3>5. Redesign the Library for easier access and AI-assisted reuse</h3>
+        <p>The existing product does not make saved materials feel actionable after upload. Our redesigned Library gives users a clearer place to revisit previous tutor conversations, generated summaries, and uploaded study materials. Instead of functioning only as storage, the Library becomes a working academic hub: students can open saved content, return to past AI conversations, and use library materials as context for future assistance. This improves efficiency for returning users because they do not need to re-upload the same documents or search through disconnected outputs.</p>
       </div>
+
+      <figure class="comparison single-shot">
+        <div class="screen after">
+          <h4>After</h4>
+          <img src="src/assets/images/recs-library-after.png" alt="Redesigned Library page showing saved tutor conversations and generated study content.">
+        </div>
+        <figcaption class="caption">Figure 9: The redesigned Library makes saved study content easier to revisit and use as context for later AI assistance.</figcaption>
+      </figure>
+
+      <div class="recommendation">
+        <h3>6. Shift the visual style toward an academic learning environment</h3>
+        <p>The original interface relies heavily on bright gradients, purple accents, and a tool-heavy layout that feels closer to a general AI utility dashboard. Our redesign uses a calmer green palette, stronger black text, simpler page structure, and consistent educational visual language. This aesthetic change is not only decorative; it supports readability, reduces visual noise, and makes the product feel more aligned with studying, coursework, and long-form learning. The main trade-off is that the redesign is less flashy, but the more focused style better supports trust and sustained academic use.</p>
+      </div>
+
+      <figure class="comparison">
+        <div class="before-after">
+          <div class="screen before">
+            <h4>Before</h4>
+            <img src="src/assets/images/recs-quiz-before.png" alt="Original quiz screen with a minimal white layout and basic correct and incorrect answer states.">
+          </div>
+          <div class="screen after">
+            <h4>After</h4>
+            <img src="src/assets/images/recs-landing-after.png" alt="Redesigned StudyX interface using a green academic palette and clearer visual hierarchy.">
+          </div>
+        </div>
+        <figcaption class="caption">Figure 10: The redesigned visual system uses a more consistent academic style while preserving clear feedback states and strong readability.</figcaption>
+      </figure>
 
       <div class="figma-box">
         <h3>High Fidelity Prototype</h3>
-        <p>At the following link you will find our fully interactive Figma prototype, including the redesigned landing page, sidebar, upload flow, library, and quiz feedback screen.</p>
-        <a href="https://www.figma.com/proto/YOUR_LINK_HERE" target="_blank" rel="noopener noreferrer">Open Figma Prototype</a>
-        <p><small>Replace this placeholder with your public Figma prototype link before submitting.</small></p>
+        <p>At the following link you will find our fully interactive Figma prototype, including the redesigned landing page, sidebar, upload flow, AI Tutor chat, Library, and updated visual system.</p>
+        <a href="https://www.figma.com/proto/Z5RVxO4IXCPDvoo38vzzpD/Tech-Comm-UI-Redesign?node-id=81-1137&t=0Z5xQJiUAW2wpHjn-1" target="_blank" rel="noopener noreferrer">Open Figma Prototype</a>
       </div>
     </section>
 
@@ -163,7 +149,7 @@
       <h2 id="conclusion-heading">Conclusion</h2>
       <p>This project showed that strong AI features still require clear interface design. StudyX.ai can generate useful learning materials, but our testing showed that users often could not access those benefits efficiently. The redesign focuses on practical changes that make the product easier to learn, easier to navigate, and more transparent during system processing.</p>
       <p>Our team learned that user behavior often reveals problems that are easy to miss during normal design review. For example, the missing upload progress indicator looked minor at first, but it caused repeated uploads and lowered user confidence. Similarly, the long sidebar seemed feature-rich, but participants experienced it as cluttered and difficult to scan.</p>
-      <p>For the StudyX.ai engineering team, we recommend implementing the progress bar and sidebar grouping first because they are likely to improve high-frequency workflows with relatively low technical cost. The onboarding area can be added as a first-session state on the home page. The expanded quiz feedback will require more backend support, but it offers the greatest educational value. Together, these updates would make StudyX.ai more efficient, more understandable, and more useful for students.</p>
+      <p>For the StudyX.ai engineering team, we recommend implementing the progress bar and sidebar grouping first because they are likely to improve high-frequency workflows with relatively low technical cost. The onboarding area can be added as a first-session state on the home page. The AI Tutor chat and redesigned Library require stronger support for conversation history, file context, and saved generated content, but they offer the greatest educational value. Together, these updates would make StudyX.ai more efficient, more understandable, and more useful for students.</p>
     </section>
   </main>
 
