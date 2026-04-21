@@ -1,6 +1,6 @@
 # StudyX.ai Tech Report
 
-Simple static website for a class usability report.
+Simple website for a Tech Report (Group 6) - CS 3803.
 
 ## File Structure
 
@@ -47,7 +47,3 @@ http://localhost:8000
 ```
 
 To stop the server, press `Ctrl + C` in the terminal.
-
-## Notes
-
-Replace the placeholder Figma link in `recommendations.html` before submitting.
