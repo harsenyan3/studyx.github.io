@@ -9,7 +9,7 @@
 <body id="top">
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top">StudyX.ai Tech Report</a>
+      <a class="brand" href="#top">Tech Report</a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a class="active" href="data.html">Data</a>
@@ -29,118 +29,115 @@
   <main>
     <section class="section" aria-labelledby="methods-heading">
       <h2 id="methods-heading">Methodology</h2>
-      <p>We conducted six moderated usability sessions lasting approximately 45 to 60 minutes each. Participants joined remotely, shared their screens, and were asked to think aloud while completing tasks. The research team observed behavior, recorded task completion, and took notes on confusion, hesitation, and repeated actions.</p>
-      <p>Participants represented several academic roles: one dual enrollment student, three undergraduate students, one graduate student, and one professor or staff member. Each participant completed a short pre-test questionnaire about academic role, study habits, use of digital study tools, and familiarity with AI tools.</p>
-      <p>Each participant completed seven tasks: find onboarding support, create a study guide, generate a quiz, review quiz results, generate a summary, organize study materials, and use the AI assistant. The tasks were selected because they represent the core workflows StudyX.ai promotes to student users.</p>
-      <p>We tracked task success, time on task, wrong navigation attempts, quiz feedback ratings, and post-test comments. This combination of quantitative and qualitative data allowed us to identify which interface problems were repeated across users rather than based on a single opinion.</p>
+      <p>Our team evaluated StudyX.ai using a pre-test questionnaire, a moderated usability test, and a post-test questionnaire. The pre-test questionnaire received six responses and was used to understand participants' academic level, current study habits, and familiarity with AI tools. The usability-test analysis below is based on five completed post-test questionnaires, which captured participants' reactions after using the product.</p>
+      <p>The participant pool included academically active users connected to Georgia Tech: undergraduate students, a graduate student, a dual enrollment student, and a professor or staff member. Pre-test responses showed that participants already used study supports such as flashcards, textbook problems, past exams, worksheets, office hours, Q&A, summarization, and concept explanation. Reported AI usage ranged from 2 to 9 on a 10-point scale, with an average of 4.5, meaning the group included both low-frequency and high-frequency AI users.</p>
+      <p>During usability testing, participants explored StudyX.ai's main workflows: landing page orientation, file upload, organization, quiz generation, quiz feedback, AI assistance, and summarization. The post-test questionnaire asked participants to evaluate the landing page and general UI, upload and organization features, quiz generation, quiz feedback clarity, AI assistance, summary quality, most useful features, and most frustrating parts of the experience.</p>
+      <p>We analyzed the post-test responses by coding repeated themes across the five respondents. Instead of treating a single comment as conclusive, we counted how many participants mentioned each usability problem or feature preference. This approach allowed us to connect design recommendations to observed patterns in the data, including navigation confusion, slow upload or processing feedback, weak AI assistance, and demand for a stronger quiz and tutoring workflow.</p>
     </section>
 
     <section class="section" aria-labelledby="findings-heading">
       <h2 id="findings-heading">Findings</h2>
 
       <div class="finding">
-        <h3>Finding 1: First-time users lacked a clear starting point</h3>
-        <p>Only one of six participants completed the onboarding task without assistance. Most users paused on the home screen because the interface showed an upload area but did not explain the available tools, what file types were useful, or what a first-time user should do first.</p>
+        <h3>Finding 1: The landing page and navigation did not clearly guide users</h3>
+        <p>Four of five post-test participants described the landing page or initial interface as difficult to understand, hard to navigate, or lacking onboarding. One participant said the site was "very purple" and difficult to know where to start, while another said the UI was clean but not intuitive. A third participant noted that the sign-up and payment elements felt too prominent, which distracted from the study workflow.</p>
       </div>
 
-      <figure class="chart" role="img" aria-label="Bar chart showing task completion out of six participants. Onboarding had one success, study guide had four, quiz had five, results had three, summary had four, organization had two, and AI chat had four.">
-        <div class="chart-title">Figure 1: Task Completion Rate</div>
-        <div class="bar-row"><span>Onboarding</span><div class="bar-track"><div class="bar low" style="width: 17%;"></div></div><strong>1/6</strong></div>
-        <div class="bar-row"><span>Study guide</span><div class="bar-track"><div class="bar" style="width: 67%;"></div></div><strong>4/6</strong></div>
-        <div class="bar-row"><span>Quiz</span><div class="bar-track"><div class="bar" style="width: 83%;"></div></div><strong>5/6</strong></div>
-        <div class="bar-row"><span>Results</span><div class="bar-track"><div class="bar warn" style="width: 50%;"></div></div><strong>3/6</strong></div>
-        <div class="bar-row"><span>Summary</span><div class="bar-track"><div class="bar" style="width: 67%;"></div></div><strong>4/6</strong></div>
-        <div class="bar-row"><span>Organization</span><div class="bar-track"><div class="bar low" style="width: 33%;"></div></div><strong>2/6</strong></div>
-        <div class="bar-row"><span>AI chat</span><div class="bar-track"><div class="bar" style="width: 67%;"></div></div><strong>4/6</strong></div>
-        <figcaption class="caption">Figure 1 shows that onboarding and organization were the weakest tasks.</figcaption>
+      <figure class="chart" role="img" aria-label="Bar chart of coded usability issues from five post-test responses. Landing or navigation confusion was mentioned by four participants, upload or processing issues by four, AI assistance issues by five, organization or library issues by three, and visual style or payment distraction by two.">
+        <div class="chart-title">Figure 1: Coded Usability Issues Mentioned in Post-Test Responses</div>
+        <div class="bar-row"><span>AI assistance issues</span><div class="bar-track"><div class="bar low" style="width: 100%;"></div></div><strong>5/5</strong></div>
+        <div class="bar-row"><span>Landing/navigation confusion</span><div class="bar-track"><div class="bar warn" style="width: 80%;"></div></div><strong>4/5</strong></div>
+        <div class="bar-row"><span>Upload/processing issues</span><div class="bar-track"><div class="bar warn" style="width: 80%;"></div></div><strong>4/5</strong></div>
+        <div class="bar-row"><span>Library/organization issues</span><div class="bar-track"><div class="bar" style="width: 60%;"></div></div><strong>3/5</strong></div>
+        <div class="bar-row"><span>Visual/paywall distraction</span><div class="bar-track"><div class="bar" style="width: 40%;"></div></div><strong>2/5</strong></div>
+        <figcaption class="caption">Figure 1 shows coded themes from the five completed post-test questionnaires.</figcaption>
       </figure>
 
       <div class="finding">
-        <h3>Finding 2: Upload feedback was missing</h3>
-        <p>All six participants expressed uncertainty after selecting a file. The product did not show a progress bar, confirmation message, or processing status. Two participants uploaded the same file again because they believed the first upload had failed.</p>
+        <h3>Finding 2: Upload, processing, and organization created uncertainty</h3>
+        <p>Four of five participants identified problems with upload, processing speed, or organization. One participant wanted to upload multiple files instead of merging PDFs first. Another said the upload process was very slow compared with alternative tools. A third participant reported that drag-and-drop did not work and that previously uploaded files and generated summaries did not seem to remain available in the Library.</p>
       </div>
 
-      <figure class="chart" role="img" aria-label="Bar chart showing average time on upload related tasks. Study guide took 127 seconds, quiz generation took 168 seconds, and summary took 100 seconds.">
-        <div class="chart-title">Figure 2: Average Time on Upload-Dependent Tasks</div>
-        <div class="bar-row"><span>Study guide</span><div class="bar-track"><div class="bar warn" style="width: 76%;"></div></div><strong>127s</strong></div>
-        <div class="bar-row"><span>Quiz generation</span><div class="bar-track"><div class="bar low" style="width: 100%;"></div></div><strong>168s</strong></div>
-        <div class="bar-row"><span>Summary</span><div class="bar-track"><div class="bar" style="width: 60%;"></div></div><strong>100s</strong></div>
-        <figcaption class="caption">Figure 2 shows that quiz generation took the longest, partly because users waited without system feedback.</figcaption>
+      <figure class="chart" role="img" aria-label="Bar chart of upload and organization concerns. Slow processing was mentioned by two participants, multi-file or drag and drop issues by two, missing saved content by one, and organization concerns by three.">
+        <div class="chart-title">Figure 2: Upload and Organization Concerns</div>
+        <div class="bar-row"><span>Organization concerns</span><div class="bar-track"><div class="bar warn" style="width: 60%;"></div></div><strong>3/5</strong></div>
+        <div class="bar-row"><span>Slow processing</span><div class="bar-track"><div class="bar" style="width: 40%;"></div></div><strong>2/5</strong></div>
+        <div class="bar-row"><span>Upload interaction issues</span><div class="bar-track"><div class="bar" style="width: 40%;"></div></div><strong>2/5</strong></div>
+        <div class="bar-row"><span>Missing saved content</span><div class="bar-track"><div class="bar" style="width: 20%;"></div></div><strong>1/5</strong></div>
+        <figcaption class="caption">Figure 2 separates the upload and organization issues participants described in the post-test questionnaire.</figcaption>
       </figure>
 
       <div class="finding">
-        <h3>Finding 3: The sidebar created navigation errors</h3>
-        <p>The sidebar listed more than ten tools with similar visual weight. Four of six participants clicked the wrong tool before finding the quiz or AI assistant feature. The lack of grouping made it difficult to distinguish study creation tools from writing tools and settings.</p>
+        <h3>Finding 3: Quiz generation was the strongest existing feature, but feedback was inconsistent</h3>
+        <p>Participants responded more positively to quiz generation than to most other features. Four of five participants described the quiz tool as useful, standard but functional, or one of the features they would return to. However, quiz feedback ratings varied widely, with scores of 3, 8, 5, 7, and 3 out of 10. The average rating was 5.2, showing that the quiz itself had value but the supporting feedback did not meet user expectations consistently.</p>
       </div>
 
-      <figure class="chart" role="img" aria-label="Bar chart showing average wrong navigation clicks. Onboarding had 2.8, quiz had 2.2, organization had 3.0, and AI chat had 1.5 wrong clicks.">
-        <div class="chart-title">Figure 3: Average Wrong Navigation Clicks</div>
-        <div class="bar-row"><span>Onboarding</span><div class="bar-track"><div class="bar low" style="width: 93%;"></div></div><strong>2.8</strong></div>
-        <div class="bar-row"><span>Quiz</span><div class="bar-track"><div class="bar warn" style="width: 73%;"></div></div><strong>2.2</strong></div>
-        <div class="bar-row"><span>Organization</span><div class="bar-track"><div class="bar low" style="width: 100%;"></div></div><strong>3.0</strong></div>
-        <div class="bar-row"><span>AI chat</span><div class="bar-track"><div class="bar" style="width: 50%;"></div></div><strong>1.5</strong></div>
-        <figcaption class="caption">Figure 3 shows that navigation-heavy tasks caused repeated wrong clicks.</figcaption>
-      </figure>
-
-      <div class="finding">
-        <h3>Finding 4: Quiz feedback was too limited</h3>
-        <p>Only three participants found the quiz results page without help. Participants who found it said the feedback was not detailed enough because it showed whether answers were right or wrong but did not explain the related concept or point users back to the uploaded document.</p>
-      </div>
-
-      <figure class="chart" role="img" aria-label="Column chart showing quiz feedback ratings. Participant ratings were 5, 7, 3, 5, 8, and 3 out of 10.">
-        <div class="chart-title">Figure 4: Quiz Feedback Ratings</div>
+      <figure class="chart" role="img" aria-label="Column chart showing quiz feedback ratings from five participants. Ratings were 3, 8, 5, 7, and 3 out of 10.">
+        <div class="chart-title">Figure 3: Quiz Feedback Ratings</div>
         <div class="line-chart">
-          <div class="point" style="height: 50%;"><span>P1: 5</span></div>
-          <div class="point" style="height: 70%;"><span>P2: 7</span></div>
-          <div class="point" style="height: 30%;"><span>P3: 3</span></div>
-          <div class="point" style="height: 50%;"><span>P4: 5</span></div>
-          <div class="point" style="height: 80%;"><span>P5: 8</span></div>
-          <div class="point" style="height: 30%;"><span>P6: 3</span></div>
+          <div class="point" style="height: 30%;"><span>P1: 3</span></div>
+          <div class="point" style="height: 80%;"><span>P2: 8</span></div>
+          <div class="point" style="height: 50%;"><span>P3: 5</span></div>
+          <div class="point" style="height: 70%;"><span>P4: 7</span></div>
+          <div class="point" style="height: 30%;"><span>P5: 3</span></div>
         </div>
-        <figcaption class="caption">Figure 4 shows an average quiz feedback rating of 4.8 out of 10.</figcaption>
+        <figcaption class="caption">Figure 3 shows an average quiz feedback rating of 5.2 out of 10 across the five post-test respondents.</figcaption>
       </figure>
 
       <div class="finding">
-        <h3>Finding 5: Organization tools were difficult to discover</h3>
-        <p>Only two of six participants completed the organization task. Participants expected course folders, labels, or a workspace model, but the interface did not clearly show where saved study materials should go. This problem would likely become worse for returning users with many files.</p>
+        <h3>Finding 4: AI assistance needed to be easier to find and more conversational</h3>
+        <p>All five participants identified a problem or desired change related to AI assistance. Comments included that the AI assistant should be accessible from the start, that the ask-AI question tool was difficult to locate, that the response was incorrect, that the assistant was blocked by credits or a paid plan, and that the product needed an actual chatbot tutor. These responses directly support redesigning AI Tutor as a persistent chat experience with file upload and follow-up questions.</p>
+      </div>
+
+      <figure class="chart" role="img" aria-label="Bar chart of features participants said they would return to. Quiz was mentioned by five participants, summary by one participant, and flashcards by one participant.">
+        <div class="chart-title">Figure 4: Features Participants Would Return To</div>
+        <div class="bar-row"><span>Quiz generation</span><div class="bar-track"><div class="bar" style="width: 100%;"></div></div><strong>5/5</strong></div>
+        <div class="bar-row"><span>Summary</span><div class="bar-track"><div class="bar" style="width: 20%;"></div></div><strong>1/5</strong></div>
+        <div class="bar-row"><span>Flashcards</span><div class="bar-track"><div class="bar" style="width: 20%;"></div></div><strong>1/5</strong></div>
+        <figcaption class="caption">Figure 4 shows that quiz generation had the strongest return-use value, while other features were mentioned less often.</figcaption>
+      </figure>
+
+      <div class="finding">
+        <h3>Finding 5: The visual design and feature set felt less academic than users expected</h3>
+        <p>Several comments suggested that StudyX.ai did not feel sufficiently organized or academically focused. One participant called the interface "very purple," another asked for a more sophisticated interface, and another said the tools felt similar to other websites but less organized. These comments support the redesign's calmer green palette, clearer hierarchy, and more education-oriented visual identity.</p>
       </div>
 
       <div class="chart">
         <div class="chart-title">Table 1: Participant Quotes</div>
         <table>
-          <caption class="caption">Direct participant quotes about onboarding, upload feedback, sidebar navigation, quiz feedback, and organization.</caption>
+          <caption class="caption">Direct post-test quotes used to support the coded findings.</caption>
           <thead>
             <tr>
               <th>Participant</th>
-              <th>Task</th>
+              <th>Area</th>
               <th>Direct Quote</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>P1</td>
-              <td>Onboarding</td>
-              <td>"I had no idea where to start. There is no tutorial telling me what this does."</td>
+              <td>P2</td>
+              <td>Landing page</td>
+              <td>"It was very purple. Difficult to know where to start."</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>Navigation</td>
+              <td>"The UI was very clean but did not feel intuitive nor did it really help direct me to what I wanted to do."</td>
             </tr>
             <tr>
               <td>P3</td>
               <td>Upload</td>
-              <td>"I uploaded my file and then nothing happened. I did not know if it was loading."</td>
+              <td>"The upload process was very slow, especially compared to other alternative programs doing the same thing."</td>
             </tr>
             <tr>
               <td>P4</td>
-              <td>Quiz</td>
-              <td>"There are so many things in the sidebar. I clicked three tools before I found the quiz one."</td>
+              <td>Library</td>
+              <td>"The previously uploaded files and generated summaries did not seem to actually be there, which is a major issue to refer back to past content."</td>
             </tr>
             <tr>
-              <td>P6</td>
-              <td>Quiz results</td>
-              <td>"The feedback just said incorrect. It did not tell me why or what the right concept was."</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>Organization</td>
-              <td>"I could not figure out how to organize anything. Everything just piles up."</td>
+              <td>P5</td>
+              <td>AI Tutor</td>
+              <td>"Make it more concise in its summaries and have an actual chatbot tutor instead of the tutor currently on the site."</td>
             </tr>
           </tbody>
         </table>
@@ -150,11 +147,11 @@
     <section class="section" aria-labelledby="analysis-heading">
       <h2 id="analysis-heading">Analysis</h2>
       <div class="analysis">
-        <p>Figure 1 shows that the onboarding task had the lowest completion rate, with only one of six participants succeeding. This indicates a learnability problem rather than a preference issue. Because users could not easily understand what StudyX.ai offered, our redesign adds a clear welcome area, a short explanation of the product, and primary calls to action for starting a study task.</p>
-        <p>Figure 2 shows that upload-dependent tasks took a long time, especially quiz generation at 168 seconds. Participant comments explain that the delay was not only technical; users were unsure whether the system was working. For this reason, our prototype adds a progress bar, upload status text, and completion confirmation so users receive immediate feedback.</p>
-        <p>Figure 3 shows that users made repeated wrong clicks in the sidebar. This supports a redesign of the navigation, not just a visual style change. The prototype groups features into Home, Library, AI Tools, and Preferences so users can scan by purpose instead of reading a long list of similar tool names.</p>
-        <p>Figure 4 shows that quiz feedback received an average rating of 4.8 out of 10. The low score is supported by quotes from participants who wanted explanations. Our prototype changes the quiz results component so incorrect answers include an explanation, a reference to the source material, and a prompt to continue with the AI tutor.</p>
-        <p>The organization task also showed a mismatch between user expectations and the interface. Students expected course-based folders because that model is common in Canvas, Google Drive, and Notion. Our redesign introduces a Library page with course folders and a visible New Course action to make saved materials easier to manage over time.</p>
+        <p>Figure 1 shows that AI assistance, landing/navigation clarity, and upload/processing feedback were the most frequently mentioned issues. Because four of five participants struggled with the initial interface or navigation, our redesign adds a clearer landing page and simplifies the sidebar into fewer, more purposeful categories. This directly responds to the evidence that users did not always know where to begin or how to locate the right tool.</p>
+        <p>Figure 2 shows that organization concerns appeared in three of five post-test responses, while upload interaction or processing issues appeared in multiple responses as well. These findings justify two redesign decisions: adding clearer upload progress feedback and redesigning the Library as an active workspace. The Library recommendation is especially supported by the comment that previous uploads and generated summaries were not easy to find again.</p>
+        <p>Figure 3 shows that quiz feedback received mixed ratings, with two participants rating it only 3 out of 10 while others rated it higher. This means quiz generation should not be removed; it was one of the product's strongest features. However, the surrounding learning support needs improvement so users can better understand generated content, check accuracy, and continue asking questions when feedback is unclear.</p>
+        <p>Figure 4 shows that all five participants would return to quiz generation, making it the clearest high-value feature in the product. This supports keeping quiz generation visible in the redesigned information architecture. At the same time, the post-test comments show that quiz usefulness depends on better AI support, which is why our prototype emphasizes a more accessible AI Tutor chat instead of a one-time answer flow.</p>
+        <p>The qualitative quotes in Table 1 show that the redesign decisions are based on repeated user concerns rather than preference alone. The calmer green visual system responds to comments about the original interface feeling too purple or not sophisticated enough. The AI Tutor chat responds to requests for a real chatbot tutor with follow-up questions. The Library redesign responds to the need to revisit old tutor conversations, uploads, and generated study materials. Together, these changes target learnability, efficiency, feedback quality, and long-term usefulness.</p>
       </div>
     </section>
   </main>
