@@ -6,8 +6,8 @@
   --line: #b8df9d;
   --navy: #1f7a2e;
   --teal: #49cf4f;
-  --gold: #9bb63f;
-  --red: #b45353;
+  --gold: #f0c94a;
+  --red: #d9a51f;
   --pale: #d7ffc6;
 }
 
@@ -243,23 +243,23 @@ main {
 }
 
 .bar-track {
-  background: #e7f9dc;
+  background: #fff3bf;
   border-radius: 6px;
   height: 22px;
   overflow: hidden;
 }
 
 .bar {
-  background: var(--teal);
+  background: #e8b923;
   height: 100%;
 }
 
 .bar.low {
-  background: var(--red);
+  background: #d99a18;
 }
 
 .bar.warn {
-  background: var(--gold);
+  background: #f0c94a;
 }
 
 .line-chart {
@@ -275,7 +275,7 @@ main {
 
 .point {
   align-self: flex-end;
-  background: var(--gold);
+  background: #f0c94a;
   border-radius: 6px 6px 0 0;
   min-width: 48px;
   position: relative;
