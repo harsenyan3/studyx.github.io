@@ -9,7 +9,7 @@
 <body id="top">
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top">StudyX.ai Tech Report</a>
+      <a class="brand" href="#top">Tech Report</a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="data.html">Data</a>
@@ -32,7 +32,7 @@
 
       <div class="recommendation">
         <h3>1. Add a clear onboarding area to the landing page</h3>
-        <p>The existing product places users directly into an upload prompt. Our design adds a short welcome message, a plain explanation of what StudyX.ai does, and visible starting actions. This improves learnability by helping first-time users understand the system before they commit to an upload.</p>
+        <p>The current StudyX.ai design lacked onboarding tools, making it difficult for new users to familiarize themself with the application. As such, our redesign primarily focused on adding those onboarding tools to provide a more friendly new-user experience. Our design opts to remove the self-advertisement and payment information found on the original page and instead features a short welcome message. Panels also contain improved helper text to help users easily learn the app's functions.</p>
       </div>
 
       <figure class="comparison">
@@ -51,7 +51,7 @@
 
       <div class="recommendation">
         <h3>2. Simplify and group the sidebar navigation</h3>
-        <p>The existing sidebar presents too many tools at the same level. Our design groups navigation into Home, Library, AI Tools, and Preferences. This reduces visual scanning, lowers wrong-click rates, and supports efficiency. The trade-off is that some secondary tools become less visible, but the most common study workflows become easier to find.</p>
+        <p>One of the main issues with the StudyX sidebar was that the multitude of AI tools listed lacked any organization, making it difficult to spot specific features when needed. Their design uses a single header titled AI Tools, with a large spanning list, and hides other important menus at the bottom. In our redesign, we reduced the number of tools listed to avoid overloading the menu and designed the sidebar with more section headers, organizing the buttons. While this forced us to remove many of the features listed in the original app, the simpler sidebar design would allow users to find features more quickly at a glance.</p>
       </div>
 
       <figure class="comparison">
@@ -70,7 +70,7 @@
 
       <div class="recommendation">
         <h3>3. Show upload progress and status messages</h3>
-        <p>The existing upload flow does not tell users whether a file is uploading, processing, or complete. Our design adds a progress bar, status text, and final confirmation. This improves system feedback and reduces user error, especially the repeated uploads observed during testing.</p>
+        <p>In the current design, StudyX.ai lacked user feedback to inform users about ongoing processes and failed to provide users with any information about current progress or errors. Our new design provides this feedback through a progress bar and status text to confirm the current state of a running process.</p>
       </div>
 
       <figure class="comparison">
@@ -89,10 +89,10 @@
 
       <div class="recommendation">
         <h3>4. Redesign AI Tutor as an ongoing tutoring chat</h3>
-        <p>The existing experience treats help as a single request based on one upload or answer state. Our redesign makes AI Tutor a persistent chat workspace where students can upload files, ask an initial question, and continue with follow-up questions in the same conversation. This better supports real tutoring behavior: students can clarify confusing concepts, ask for examples, request simpler explanations, and connect answers back to their course materials without restarting the workflow. The trade-off is that the chat interface requires stronger conversation history and file-context handling, but it directly improves learnability, feedback quality, and user control.</p>
+        <p>StudyX.ai's current AI tutor employs a single-request system, meaning it only allows users to ask one question or upload a single document, limiting the feature's interactivity. With this system in place, the AI tutor is more of a homework solver than a tutor, which is far less effective than a regular chatbot. In our redesign, we opted to make the AI Tutor a persistent chatbot, allowing users to upload files, get questions answered, and continue chatting with the AI by asking follow-up questions or for clarifications. While this would require a move intensive AI Chatbot integration than what is currently present on the application, this allows the AI Tutor to be more responsive and help guide the user through any problems they may have, providing a much better AI Tutor.</p>
       </div>
 
-      <figure class="comparison">
+      <figure class="comparison visual-comparison">
         <div class="before-after">
           <div class="screen before">
             <h4>Before</h4>
@@ -108,7 +108,7 @@
 
       <div class="recommendation">
         <h3>5. Redesign the Library for easier access and AI-assisted reuse</h3>
-        <p>The existing product does not make saved materials feel actionable after upload. Our redesigned Library gives users a clearer place to revisit previous tutor conversations, generated summaries, and uploaded study materials. Instead of functioning only as storage, the Library becomes a working academic hub: students can open saved content, return to past AI conversations, and use library materials as context for future assistance. This improves efficiency for returning users because they do not need to re-upload the same documents or search through disconnected outputs.</p>
+        <p>Previously, users struggled to use StudyX.ai's save feature, which was supposed to allow them to save previous conversations, generated documents, and uploaded documents. The issue was that the UI contained many unnecessary buttons and required manual saves, making navigation confusing and requiring extra button presses. Additionally, the directory was deceptive, with some buttons redirecting users to the normal upload page, which made users believe they were uploading their document to be saved. Our redesign makes this much clearer with a simpler interface titled Library, allowing users to more easily find their old conversations and study materials. Additionally, our program switches out manual saving for automatic saving whenever a document gets uploaded, which while more storage intensive, saves users the hassle of having to manually click to store their documents.</p>
       </div>
 
       <figure class="comparison single-shot">
@@ -121,7 +121,7 @@
 
       <div class="recommendation">
         <h3>6. Shift the visual style toward an academic learning environment</h3>
-        <p>The original interface relies heavily on bright gradients, purple accents, and a tool-heavy layout that feels closer to a general AI utility dashboard. Our redesign uses a calmer green palette, stronger black text, simpler page structure, and consistent educational visual language. This aesthetic change is not only decorative; it supports readability, reduces visual noise, and makes the product feel more aligned with studying, coursework, and long-form learning. The main trade-off is that the redesign is less flashy, but the more focused style better supports trust and sustained academic use.</p>
+        <p>In the original color scheme, StudyX.ai featured bright gradients and purple theming, which users noted made the app feel like a generic AI tool rather than a study helper. Additionally, we thought the purple color scheme was less conducive to an educational tool. For our redesign, we opted for a simpler, solid green color palette and bolder text to accentuate the idea of growth and learning. In addition, we reduced the amount of text on each page, creating a cleaner interface that allows for a more natural study flow that is easy to understand for all users.</p>
       </div>
 
       <figure class="comparison">
@@ -132,7 +132,7 @@
           </div>
           <div class="screen after">
             <h4>After</h4>
-            <img src="src/assets/images/recs-landing-after.png" alt="Redesigned StudyX interface using a green academic palette and clearer visual hierarchy.">
+            <img src="src/assets/images/recs-visual-after.png" alt="Redesigned StudyX landing page using a green academic palette, cleaner onboarding, and more study-focused feature presentation.">
           </div>
         </div>
         <figcaption class="caption">Figure 10: The redesigned visual system uses a more consistent academic style while preserving clear feedback states and strong readability.</figcaption>
@@ -141,15 +141,22 @@
       <div class="figma-box">
         <h3>High Fidelity Prototype</h3>
         <p>At the following link you will find our fully interactive Figma prototype, including the redesigned landing page, sidebar, upload flow, AI Tutor chat, Library, and updated visual system.</p>
-        <a href="https://www.figma.com/proto/Z5RVxO4IXCPDvoo38vzzpD/Tech-Comm-UI-Redesign?node-id=81-1137&t=0Z5xQJiUAW2wpHjn-1" target="_blank" rel="noopener noreferrer">Open Figma Prototype</a>
+        <div class="figma-row">
+          <a href="https://www.figma.com/proto/Z5RVxO4IXCPDvoo38vzzpD/Tech-Comm-UI-Redesign?node-id=81-1137&t=0Z5xQJiUAW2wpHjn-1" target="_blank" rel="noopener noreferrer">Open Figma Prototype</a>
+          <div class="figma-note">
+            <p>(If the proportions or scaling look off, click</p>
+            <img src="src/assets/images/figma-fit-width-icon.png" alt="Figma view options icon.">
+            <p>and select <strong>Fit width</strong>.)</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="conclusion-heading">
       <h2 id="conclusion-heading">Conclusion</h2>
-      <p>This project showed that strong AI features still require clear interface design. StudyX.ai can generate useful learning materials, but our testing showed that users often could not access those benefits efficiently. The redesign focuses on practical changes that make the product easier to learn, easier to navigate, and more transparent during system processing.</p>
-      <p>Our team learned that user behavior often reveals problems that are easy to miss during normal design review. For example, the missing upload progress indicator looked minor at first, but it caused repeated uploads and lowered user confidence. Similarly, the long sidebar seemed feature-rich, but participants experienced it as cluttered and difficult to scan.</p>
-      <p>For the StudyX.ai engineering team, we recommend implementing the progress bar and sidebar grouping first because they are likely to improve high-frequency workflows with relatively low technical cost. The onboarding area can be added as a first-session state on the home page. The AI Tutor chat and redesigned Library require stronger support for conversation history, file context, and saved generated content, but they offer the greatest educational value. Together, these updates would make StudyX.ai more efficient, more understandable, and more useful for students.</p>
+      <p>While StudyX.ai had a multitude of useful features, its clunky UI and poor organization held it back from being the accessible study tool it was designed to be. StudyX.ai's ability to scan documents and generate study resources such as notes, summaries, and quizzes could provide students with a quick and easy way to study.</p>
+      <p>The most important aspect we learned about UI design and user behavior is that no matter how many complex features you implement or how many options you provide to users, if those elements are not organized and composed effectively, those features lose their value. This was the biggest issue with StudyX.ai, as despite its vast number of features, its poor UI made the site very difficult to use for many users, discouraging them from continuing to use it. Our redesign revolved around simplifying the overly complex features of StudyX.ai and instead focusing on a cleaner UI to put usability first.</p>
+      <p>For the StudyX.ai engineering team, we recommend the main features from our redesign to implement are the progress bar and simplified sidebar. The progress bar would provide users with feedback while using the site and make the website feel more responsive. However, perhaps more importantly, a simplified sidebar would greatly improve navigation across the site and help new users find the tools they need. By simplifying the overall layout and removing some of the more complex features found in StudyX.ai in favor of a cleaner design, StudyX.ai could become a much more efficient study tool, capable of aiding academics worldwide.</p>
     </section>
   </main>
 
